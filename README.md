@@ -1,24 +1,36 @@
-# README
+# 今回の課題について
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+この度、ご興味をもっていただきありがとうございます。
 
-Things you may want to cover:
+ここでは、実装はもとより、どれだけうまく調べながら作業を進めることができるかということを見るための課題を用意させてもらいました。できなくても、途中まで動いたものを提出してください。
 
-* Ruby version
+徐に直接答えを聞く・質問する以外はあらゆる手を使って、課題を解いていいです。
 
-* System dependencies
+※ 課題自体に関する質問なら受け付けます。
 
-* Configuration
+提出は、プルリクとして、プルリクのリンクを送りつけてください。
 
-* Database creation
+## 課題
 
-* Database initialization
+課題は4時間を上限として解いてください。
+4時間以上かけてもいいですが、「これを4時間でできるんだ」とみなされて、後々辛くなるのであまりオススメはしません。
 
-* How to run the test suite
+使うライブラリ・プロジェクト全体の設定なども審査の対象です。
 
-* Services (job queues, cache servers, search engines, etc.)
+### 前提
+ - ローカルの開発環境でやること
+ - ruby on railsを使うこと
+ - 自分のレポジトリを作成し、rails newをし、それに対するプルリクとして下記の課題を提出してください。
 
-* Deployment instructions
+### 求めること
+-  root_pathを"/"にして、そこからログイン・登録できること（githubのトップページみたいな感じ）
+- ログイン・ログアウトできるようにすること（ログインしたらユーザ名くらい表示してください）
+- ユーザ名 or メールアドレス + パスワードでログインできるようにしてください
+- [Parsley](http://parsleyjs.org/)を使って、フロントエンドにバリデーションをかけてください
+- あとは、時間が許す限り、"使いやすく"してください
 
-* ...
+### 使うことが推奨されるgem・フレームワーク
+※ もちろん他のものを使ってもいいです。
+
+- bootstrap
+- devise
