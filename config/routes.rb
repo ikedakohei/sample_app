@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
   devise_for :users
-  root "tops#index"
+  devise_scope :user do
+    authenticated :user do
+      root 'tops#index'
+    end
+    unauthenticated :user do
+      root 'devise/registrations#new'
+    end
+  end
 end
